@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+Magoya App - Front
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Parte frontend de los requisitos tecnicos para Magoya.
 
-## Available Scripts
+Se desarrollo una interfaz grafica con React como se solicito para representar los requerimentos, como creacion de cuentas, balance y de eventos.
 
-In the project directory, you can run:
+Requisitos previos:
 
-### `npm start`
+* Tener instalado NodeJS.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Para poder utilizar, clonar el repositorio en una carpeta a eleccion, y correr el comando:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+"npm install" (se instalaran todas las dependencias necesarias para poder ejecutar sin problemas el frontend)
 
-### `npm test`
+Luego, ejecutar el comando "npm start" el cual levantara el proyecto en el puerto 3000, asegurarse de tenerlo disponible para evitar conflicos.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Dejo imagenes a continuacion:
 
-### `npm run build`
+![image](https://github.com/nicodev29/MagoyaFront/assets/104247851/fea3c165-b54a-4d89-940e-5b8177c445bb)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Al momento de realizar una transaccion, recibimos un mensaje de confirmacion de la misma, esta se registra en la lista de eventos que se ve debajo.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![image](https://github.com/nicodev29/MagoyaFront/assets/104247851/da64f934-a295-4666-8f37-3f64cd19271d)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Las transacciones de tipo DEPOSITO, cuando son superiores a un monto de 10000, se las diferencia con un background rojo para llamar la atencion a nivel front. A nivel back, el middleware las intercepta. 
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![image](https://github.com/nicodev29/MagoyaFront/assets/104247851/117a903f-6441-4add-8880-816f7819927c)

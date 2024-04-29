@@ -67,7 +67,7 @@ function AccountForm() {
                   </div>
                   <div className="col">
                     <input
-                      type="text"
+                      type="number"
                       className="form-control"
                       name="accountNumber"
                       value={accountData.accountNumber}

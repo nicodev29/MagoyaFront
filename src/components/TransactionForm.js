@@ -59,7 +59,7 @@ function TransactionForm() {
                <div className="row mb-3">
                  <div className="col">
                    <input
-                     type="text"
+                     type="number"
                      className="form-control"
                      name="accountNumber"
                      value={transactionData.accountNumber}

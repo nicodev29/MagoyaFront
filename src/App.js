@@ -1,11 +1,17 @@
 import React from "react";
 import "./App.css";
-import UserComponent from "./components/UserComponent";
+import AccountBalance from "./components/AccountBalance";
+import AccountForm from "./components/AccountForm";
+import TransactionForm from "./components/TransactionForm";
+import EventVisor from "./components/EventVisor";
 
 function App() {
   return (
     <div className="App">
-      <UserComponent />
+      <AccountForm />
+      <TransactionForm />
+      <AccountBalance />
+      <EventVisor />
     </div>
   );
 }

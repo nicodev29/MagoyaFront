@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-function EventTable() {
+function EventVisor() {
   const [events, setEvents] = useState([]);
   const [currentPage, setCurrentPage] = useState(0);
   const [eventsPerPage] = useState(15);
@@ -24,7 +24,6 @@ function EventTable() {
 
     fetchEvents();
     const intervalId = setInterval(fetchEvents, 1000);
-
     return () => clearInterval(intervalId);
   }, []);
 
@@ -36,11 +35,12 @@ function EventTable() {
 
   return (
     <div className="container mt-5">
-      <h2>Eventos Recientes</h2>
+      <h2>Transacciones Recientes</h2>
       <table className="table">
         <thead>
           <tr>
             <th>ID</th>
+            <th>Número de Cuenta</th>
             <th>Fecha</th>
             <th>Tipo de Evento</th>
             <th>Monto</th>
@@ -57,6 +57,7 @@ function EventTable() {
               }
             >
               <td>{event.id}</td>
+              <td>{event.accountNumber}</td>
               <td>{event.timestamp}</td>
               <td>{event.type}</td>
               <td>${event.amount.toLocaleString()}</td>
@@ -86,4 +87,4 @@ function EventTable() {
   );
 }
 
-export default EventTable;
+export default EventVisor;
